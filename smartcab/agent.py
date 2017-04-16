@@ -219,7 +219,7 @@ def run():
 	#    * alpha   - continuous value for the learning rate, default is 0.5
 
 	# agent = env.create_agent(LearningAgent, learning=False)
-	agent = env.create_agent(LearningAgent, learning=True, debug=False, epsilon=1, alpha=0.6, a=0.995)
+	agent = env.create_agent(LearningAgent, learning=True, debug=False, epsilon=1, alpha=0.6, a=0.999)
 
 	##############
 	# Follow the driving agent
@@ -246,7 +246,7 @@ def run():
 	#   n_test     - discrete number of testing trials to perform, default is 0
 	# sim.run(tolerance=0.05, n_test=10)
 	# optimized
-	sim.run(tolerance=0.0065, n_test=50)
+	sim.run(tolerance=0.0060, n_test=50)
 
 
 if __name__ == '__main__':
